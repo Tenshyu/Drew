@@ -1,0 +1,321 @@
+ 
+ body{
+    background: rgb(14, 14, 14);
+    background-image: url(image\360_F_124379158_7lRtjpgu3Ip7ll3K2OTpFG2Wm16pvrjs.jpg);
+    background-repeat: repeat;
+    overflow-x: hidden;
+             
+}
+h1 {
+    position: absolute;
+    top: 100px;
+    left: 18%;
+    text-align: justify;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, rgb(9, 177, 210), rgb(95, 76, 76));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#Box1{
+    background:linear-gradient(black, gray) ;
+    width: 500px;
+    height: 500px;  
+    padding: 20px;
+    border-radius: 40px;
+    position: absolute;
+    top: 400px;
+    left: 850px;
+    box-shadow: 15px -15px 15px rgb(41, 182, 224);
+             
+}
+#Box2{
+    background: black;
+    width: 1650px;
+    height: 300px;
+    padding: 0%;
+    border-radius: 0%;  
+    margin-top: 40px; 
+    margin-left: -100px;
+}
+#Box3{
+    background:linear-gradient( black,gray) ;
+    width: 500px;
+    height: 500px;  
+    padding: 20px;
+    border-radius: 40px;
+    position: absolute;
+    top: 400px;
+    left: 140px;
+    box-shadow: 15px -15px 15px rgb(41, 182, 224);    
+}
+#box4th{
+    background:linear-gradient(black ,gray) ;
+    width: 500px;
+    height: 500px;  
+    padding: 20px;
+    border-radius: 40px;
+    position: absolute;
+    top: 1100px;
+    left: 140px;
+    box-shadow: 15px -15px 15px rgb(41, 182, 224);    
+}
+#box5th{
+    background:linear-gradient(black ,gray) ;
+    width: 500px;
+    height: 500px;  
+    padding: 20px;
+    border-radius: 40px;
+    position: absolute;
+    top: 1100px;
+    left: 850px;
+    box-shadow: 15px -15px 15px rgb(41, 182, 224);    
+}
+#text1{
+    font-size: 50px;
+    font-style: 'Times New Roman';
+    background: linear-gradient(to bottom,rgb(0, 0, 255), rgb(64, 127, 203), rgb(111, 185, 198));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+#text1p1{
+    font-size: 50px;
+    font-style: 'Times New Roman';
+    background: linear-gradient(to top,rgb(0, 0, 255), rgb(64, 127, 203), rgb(111, 185, 198));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+#text2{
+    font-size: 30px;
+    font-style: 'Times New Roman';
+    background-color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ .container{
+    display: flex;
+    align-items: baseline;
+    overflow: hidden;
+    height: 50vh;
+    width: 30%;
+}
+.path{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    animation: eatingpath 1s linear infinite;
+    top: 50px;
+    margin-top: 30px;
+    margin-left: 300px;
+    position: absolute;
+}
+.path::before{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+@keyframes eatingpath{
+    0%{transform: translateX(50%);}
+    100%{transform: translateX(-50%);} 
+}
+.pacman{
+    position: relative;
+    background: transparent;
+    z-index: 1;
+    position: absolute;
+    top: 90px;
+    left: 300px;
+}
+.pacman::before,::after{
+    content: "";
+    position: absolute;
+    top: -35px;
+    display: block;
+    border-radius: 50%;
+    height: 0px;
+    width: 0px;
+}
+.pacman::before{
+    animation: chunktop 0.5s ease infinite;
+    border: 35px solid #ffcc00;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+
+}
+@keyframes chunktop{
+   50% {transform: rotate(-45deg);}
+    0%,100%{transform: rotate(-80deg);}
+    
+}
+.pacman::after{
+    animation: chunkbottom 0.5s ease infinite;
+    border: 35px solid #ffcc00;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+@keyframes chunkbottom{
+    50%{transform: rotate(-40deg);}
+   0%,100% {transform: rotate(0deg);}
+    
+}
+#topfixedbox{
+    background: rgba(136, 132, 132, 0.564);
+    stop-opacity: inherit;
+    position: fixed;
+    width: 2000px;
+    height: 40px;
+    top: 0%;
+    margin-left: -100px;
+
+}
+#border{
+    background:linear-gradient(to right, black, rgb(16, 16, 16),rgb(24, 24, 24) ) ;
+    width: 110%;
+    height: 500px;
+    top: 5px;
+    margin-top: 950px; 
+    
+}
+#food{
+     font-family: Arial, sans-serif ;
+     background: linear-gradient(to top,rgb(0, 0, 255), rgb(64, 127, 203), rgb(111, 185, 198));
+     font-size: 50px;
+     padding: 3px;
+     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+#sinigangimg{
+    background-image: url(image/filipino_pork_sinigang.jpg);
+    padding: 300px;
+    background-repeat: no-repeat;
+    background-size: 480px;
+    margin-left: 750px;
+    margin-top: -290px;
+    
+    
+    
+}
+#text2p1{
+    font-size: 100px;
+    font-style: 'Times New Roman';
+    background: linear-gradient(to bottom,rgb(0, 0, 255), rgb(64, 127, 203), rgb(111, 185, 198));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    margin-top: 120px;
+    margin-left: 200px;
+    
+    
+}
+ #skull{
+    background-image: url(image/Screenshot_2023-01-15_165227-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    padding: 500px;
+    float: right;
+    position: absolute;
+    right: -50px;
+    top: 2250px;
+}
+
+#textskull{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    
+}
+
+#end{
+    background-image: url(image/download__2_-removebg-preview.png);
+    background-repeat: no-repeat;
+    margin: 100px;
+    padding: 120px;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 4900px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    
+    
+    
+}
+#endtext{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    text-decoration: crimson;
+    background: linear-gradient(to bottom,rgb(0, 0, 255), rgb(64, 127, 203), rgb(111, 185, 198));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    left: 100px;
+    margin-left: 100px;
+    margin-top: -45px;
+    
+}
+#toptext{
+    position: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    left: 800px;
+    top: -12px;
+    font-size: 30px;
+}
+#toptext2{
+    position: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    left: 960px;
+    top: -12px;
+    font-size: 30px;
+}
+#toptext3{
+    position: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    left: 1100px;
+    top: -12px;
+    font-size: 30px;
+}
+#toptext4{
+    position: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    left: 100px;
+    top: -19px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top, rgb(0, 255, 255), rgb(11, 17, 201));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    position: absolute;
+    -webkit-background-clip: text;
+}
+a{
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(0, 4, 255);
+    text-decoration: underline;
+  }
+  a:active {
+    color: rgb(17, 140, 229);
+    text-decoration: underline;
+  }
+#ending{
+    color: aliceblue;
+    text-align: center;
+}
